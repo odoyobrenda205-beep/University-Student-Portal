@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Student Information Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+ <header>
+    <h1>Masinde Muliro University</h1>
+    <h2>Student Information Portal </h2>
+</header>
+<nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Student Registration</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>  
+</nav>
+<section id="About Us" >
+    <h3> About the Portal</h3>
+    <p>The Student Information Portal is designed to provide the students
+         with access to academic resources, personal records,
+         course enrollment and important university announcement 
+         in one centralized location</p>
+</section> 
+<section id="Programmes" >
+    <h3>Academic Programmes Offered </h3>
+    <ul>
+            <li>Bachelor of Science in Computer Science</li>
+            <li>Bachelor of Business Administration</li>
+            <li>Bachelor of Education(Arts)</li>
+            <li>Bachelor Of Nursing</li>
+        </ul>
+</section>
+<section id="Registration">
+  <h3>Student Information</h3> 
+  <table border="1" >
+    <thead>
+        <tr>
+            <th>Student ID</th>
+             <th>Student Name</th>
+              <th>Registration Number</th>
+               <th>Programme </th>
+                <th>Year of Study</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3075247</td>
+            <td>John Mwangi</td>
+            <td>COM/B/01-3355/2025</td>
+            <td>Computer Science</td>
+            <td>Year 1</td>
+        </tr>
+       <tr>
+            <td>5676782</td>
+            <td>Ashley Oenga</td>
+            <td>COM/B/01-5665/2025</td>
+            <td>Business Administration</td>
+            <td>Year 3</td>
+        </tr> 
+         <tr>
+            <td>9086866</td>
+            <td>Mary Atieno</td>
+            <td>COM/B/01-2245/2025</td>
+            <td>Nursing</td>
+            <td>Year 2</td>
+        </tr>   
+    </tbody>
+  </table>
+</section>
+<h4>Student Registration Form</h4>
+<form action="#" method="post">
+        <div>
+            <label for="fullName">Student's Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="regNumber">Registration Number:</label>
+            <input type="text" id="regNumber" name="regNumber" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="programme">Academic Programme:</label>
+            <select id="programme" name="programme" required>
+                <option value="">-- Select a Programme --</option>
+                <option value="Bachelor of Science in Computer Science">Bachelor of Science in Computer Science</option>
+                <option value="Bachelor of Business Administration">Bachelor of Business Administration</option>
+                <option value="Bachelor of  Education(Arts)">Bachelor of  Education(Arts)</option>
+                <option value="Bachelor of Nursing">Bachelor of Nursing</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html

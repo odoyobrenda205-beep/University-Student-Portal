@@ -1,0 +1,149 @@
+body {
+    background-color: #f4f6f8;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #1a3c6e;
+    text-align: center;
+}
+
+header {
+    background-color: #1a3c6e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+header p {
+    font-style: italic;
+}
+
+section {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+
+nav {
+    background-color: #2e5a9c;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0
+    padding: 0;
+    display: flex;            
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #1a3c6e;   
+    border-radius: 4px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #1a3c6e;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #2e5a9c;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #eef2f7;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main section {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+    padding: 8px;
+margin-top: 5px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    width: 60%;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #2e5a9c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #1a3c6e;
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    main section {
+        flex: 1 1 100%;           
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form select {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #1a3c6e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
